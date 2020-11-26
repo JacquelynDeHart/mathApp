@@ -80,7 +80,8 @@
     <string name="fun">FUNctions</string>
     
     <!-- cal2 strings -->
-    <string name="pos_velocity_acceleration">"Position &amp; Velocity &amp; Acceleration"</string>
+    <string name="applications_antiderivatives">Applications – Antiderivatives</string>
+    <string name="pos_velocity_acceleration">Position &amp; Velocity &amp; Acceleration</string>
     <string name="area_between_curve">Area between Curves</string>
     <string name="volume_1">Volume (Disk and Washer Methods) part 1</string>
     <string name="volume_2">Volume (Disk and Washer Methods) part 2</string>
@@ -88,22 +89,30 @@
     <string name="arc_length">Arc Length</string>
     <string name="area_surface">Area – Surface</string>
     <string name="app_physics">Applications – Physics</string>
+
     <string name="log_exponential_functions">Logarithmic and Exponential FUNctions</string>
     <string name="log_exponential_video">Video – FUN: Log &amp; Exp</string>
     <string name="log_differentiation">Video – Log Differentiation</string>
+
     <string name="hyperbolic">Hyperbolic FUNctions</string>
+
+    <string name="antiderivative_tech">Antiderivatives – Techniques</string>
     <string name="calc1_review">Calculus I Review</string>
     <string name="integration_by_parts">Integration by Parts</string>
     <string name="inverse_trig_functions">Inverse Trigonometric FUNctions</string>
     <string name="quad_integrals">Quadratic Integrals – Complex Numbers</string>
     <string name="trig_integrals">Trigonometric Integrals</string>
     <string name="rational_functions">Rational FUNctions</string>
+
+    <string name="integration">Integration</string>
     <string name="integration_definite">Integration – Definite (Review)</string>
     <string name="integration_numeric">Integration – Definite (Review)</string>
     <string name="midpoint_method">Midpoint Method</string>
     <string name="trapezoid_rule">Trapezoid Rule</string>
     <string name="integrals_improper">Integrals – Improper</string>
     <string name="integrals_overview">Overview – Definite Integral (Proper &amp; Improper)</string>
+
+    <string name="sequences_series">Sequences &amp; Series</string>
     <string name="sequences">Sequences</string>
     <string name="series">Series</string>
     <string name="numerical_intro">Numerical – Introduction</string>
