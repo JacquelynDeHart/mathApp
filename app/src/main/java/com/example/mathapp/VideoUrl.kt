@@ -103,7 +103,7 @@ class VideoUrl: AppCompatActivity() {
             }
             3 -> when(url_code){
                 1 -> video_link="http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Position_PLUS.mp4"
-                2 -> video_link="http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Area_Between_Curves-20200825a.mp4"
+                2 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Area_Between_Curves-20200825a.mp4"
                 3 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-3D_Disk-20200827a.mp4"
                 4 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-3D_Washer-20020827a.mp4"
                 5 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Shell_Method.mp4"
@@ -119,6 +119,9 @@ class VideoUrl: AppCompatActivity() {
                 15 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/C2-Int_Quad_FUN.mp4"
                 16 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/C2-Int_Trig_FUN.mp4"
                 17 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Int_Part_Fraction.mp4"
+                18 -> video_link = ""
+                19 -> video_link = ""
+                20 -> video_link = ""
             }
         }
 

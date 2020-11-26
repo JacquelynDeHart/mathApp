@@ -207,6 +207,86 @@
             android:textColor="@color/colorPrimaryDark"
             style="@style/TextAppearance.AppCompat.Large"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/integration_def"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/integration_definite"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/integration_num"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/integration_numeric"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/midpoint_method"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/midpoint_method"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/trap_rule"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/trapezoid_rule"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/integrals_imp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/integrals_improper"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/integrals_overview"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/integrals_overview"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/sequences_series"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/sequences"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/sequences"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/numeric_series_intro"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/numerical_intro"
+            android:textSize="18sp"
+            style="?attr/materialButtonOutlinedStyle"/>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="55dp"/>
