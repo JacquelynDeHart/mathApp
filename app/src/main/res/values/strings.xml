@@ -78,7 +78,51 @@
     <string name="derivatives">Derivatives of FUNctions</string>
     <string name="limits_fun">Limits of FUNctions</string>
     <string name="fun">FUNctions</string>
-
+    
+    <!-- cal2 strings -->
+    <string name="pos_velocity_acceleration">"Position &amp; Velocity &amp; Acceleration"</string>
+    <string name="area_between_curve">Area between Curves</string>
+    <string name="volume_1">Volume (Disk and Washer Methods) part 1</string>
+    <string name="volume_2">Volume (Disk and Washer Methods) part 2</string>
+    <string name="volume_shell">Volume (Shell Method)</string>
+    <string name="arc_length">Arc Length</string>
+    <string name="area_surface">Area – Surface</string>
+    <string name="app_physics">Applications – Physics</string>
+    <string name="log_exponential_functions">Logarithmic and Exponential FUNctions</string>
+    <string name="log_exponential_video">Video – FUN: Log &amp; Exp</string>
+    <string name="log_differentiation">Video – Log Differentiation</string>
+    <string name="hyperbolic">Hyperbolic FUNctions</string>
+    <string name="calc1_review">Calculus I Review</string>
+    <string name="integration_by_parts">Integration by Parts</string>
+    <string name="inverse_trig_functions">Inverse Trigonometric FUNctions</string>
+    <string name="quad_integrals">Quadratic Integrals – Complex Numbers</string>
+    <string name="trig_integrals">Trigonometric Integrals</string>
+    <string name="rational_functions">Rational FUNctions</string>
+    <string name="integration_definite">Integration – Definite (Review)</string>
+    <string name="integration_numeric">Integration – Definite (Review)</string>
+    <string name="midpoint_method">Midpoint Method</string>
+    <string name="trapezoid_rule">Trapezoid Rule</string>
+    <string name="integrals_improper">Integrals – Improper</string>
+    <string name="integrals_overview">Overview – Definite Integral (Proper &amp; Improper)</string>
+    <string name="sequences">Sequences</string>
+    <string name="series">Series</string>
+    <string name="numerical_intro">Numerical – Introduction</string>
+    <string name="numeric_tests_1">Numerical – Tests part 1</string>
+    <string name="numeric_tests_2">Numerical – Tests part 2</string>
+    <string name="new_series_from_old">New Series from Old Series</string>
+    <string name="power_series">Power Series</string>
+    <string name="power_series_intro_1">Power Series - Intro 1</string>
+    <string name="power_series_intro_2">Power Series - Intro 2</string>
+    <string name="maclaurin_series">MacLaurin Series</string>
+    <string name="taylor_series">Taylor Series</string>
+    <string name="parametric_equations">Parametric Equations</string>
+    <string name="parametric_precal">Parametric Equations - PreCalculus</string>
+    <string name="parametric_calculus">Parametric Equations - Calculus</string>
+    <string name="polar_coordinates">Polar Coordinates</string>
+    <string name="polar_coordinates_intro">Polar Coordinates - Intro</string>
+    <string name="tangent_lines">Tangent Lines</string>
+    <string name="area_arc_length">Area &amp; Arc Length</string>
+    
 
     <!-- selection strings -->
     <string name="pick_course">Select a Course:</string>
