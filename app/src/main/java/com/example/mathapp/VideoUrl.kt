@@ -103,6 +103,22 @@ class VideoUrl: AppCompatActivity() {
             }
             3 -> when(url_code){
                 1 -> video_link="http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Position_PLUS.mp4"
+                2 -> video_link="http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Area_Between_Curves-20200825a.mp4"
+                3 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-3D_Disk-20200827a.mp4"
+                4 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-3D_Washer-20020827a.mp4"
+                5 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Shell_Method.mp4"
+                6 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-ArcLength.mp4"
+                7 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Surface_Area.mp4"
+                8 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/08/C2-Physics_Apps.mp4"
+                9 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Log_Exp_FUN.mp4"
+                10 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Log_Diff.mp4"
+                11 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Hyperbolic_FUN.mp4"
+                12 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/AnitDer_C1_AntiDer.mp4"
+                13 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/AntiDer_Int_by_Parts.mp4"
+                14 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/C2-INT_InvTrig.mp4"
+                15 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/C2-Int_Quad_FUN.mp4"
+                16 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/09/C2-Int_Trig_FUN.mp4"
+                17 -> video_link = "http://www.mathbywilson.com/wp-content/uploads/2020/06/zoom_Int_Part_Fraction.mp4"
             }
         }
 
