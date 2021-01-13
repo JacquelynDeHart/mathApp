@@ -41,17 +41,14 @@ class CourseSelection : AppCompatActivity() {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-//        return when (item.itemId) {
-//            R.id.action_settings -> true
-//            else -> super.onOptionsItemSelected(item)
-//        }
+
         when (item.itemId) {
-            R.id.action_settings -> {
-//                val intent = Intent(this, SettingsMain::class.java)
-//                startActivity(intent)
-//                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+           /* R.id.action_settings -> {
+                val intent = Intent(this, SettingsMain::class.java)
+                startActivity(intent)
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                 Toast.makeText(this, "will take to settings for app later", Toast.LENGTH_SHORT).show()
-            }
+            }*/
             R.id.action_logout ->{
                 FirebaseAuth.getInstance().signOut()
                 startActivity(Intent(this, LoginActivity::class.java))
@@ -61,7 +58,8 @@ class CourseSelection : AppCompatActivity() {
                 Toast.makeText(this, "An application for mathbywilson.com", Toast.LENGTH_LONG).show()
             }
             R.id.action_email ->{
-                Toast.makeText(this, "send email to professor. function coming soon", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, SendEmail::class.java))
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             }
             R.id.action_exit -> {
                 finishAffinity()
@@ -69,37 +67,6 @@ class CourseSelection : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
 
-}}
-
-/*
-var tabLayout: TabLayout? = null
-    var viewPager: ViewPager? = null
-
-tabLayout= findViewById(R.id.tabLayout)
-viewPager= findViewById(R.id.viewPager)
-
-val colAlg: String = getString(R.string.college_algebra)
-val cal1: String = getString(R.string.calc_1)
-val cal2: String = getString(R.string.calc_2)
-
-tabLayout!!.addTab(tabLayout!!.newTab().setText(colAlg))
-tabLayout!!.addTab(tabLayout!!.newTab().setText(cal1))
-tabLayout!!.addTab(tabLayout!!.newTab().setText(cal2))
-tabLayout!!.tabGravity = TabLayout.GRAVITY_FILL
-
-val adapter = MyAdapter(this, supportFragmentManager, tabLayout!!.tabCount)
-viewPager!!.adapter = adapter
-
-viewPager!!.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
-
-tabLayout!!.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-    override fun onTabSelected(tab: TabLayout.Tab) {
-        viewPager!!.currentItem = tab.position
     }
-    override fun onTabUnselected(tab: TabLayout.Tab) {
+}
 
-    }
-    override fun onTabReselected(tab: TabLayout.Tab) {
-
-    }
-})*/

@@ -12,284 +12,297 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="30dp">
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/applications_antiderivatives"
-            android:textColor="@color/colorPrimaryDark"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            android:orientation="vertical"
+            android:padding="30dp">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/pos_vel"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/pos_velocity_acceleration"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/applications_antiderivatives"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/area_between_curves"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/area_between_curve"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/pos_vel"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/pos_velocity_acceleration"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/vol_1"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/volume_1"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/area_between_curves"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/area_between_curve"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/vol_2"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/volume_2"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/vol_1"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/volume_1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/vol_shell"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/volume_shell"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/vol_2"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/volume_2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/arc_len"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/arc_length"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/vol_shell"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/volume_shell"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/area_surface"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/area_surface"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/arc_len"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/arc_length"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/app_physics"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/app_physics"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/area_surface"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/area_surface"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/log_exponential_functions"
-            android:textColor="@color/colorPrimaryDark"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/app_physics"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/app_physics"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/log_exp"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/log_exponential_video"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_exponential_functions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/log_differentiation"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/log_differentiation"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/log_exp"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/log_exponential_video"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/hyperbolic"
-            android:textColor="@color/colorPrimaryDark"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/log_differentiation"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/log_differentiation"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/hyperbolic_vid"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/hyperbolic"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hyperbolic"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/antiderivative_tech"
-            android:textColor="@color/colorPrimaryDark"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/hyperbolic_vid"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/hyperbolic"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/calc_review"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/calc1_review"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/antiderivative_tech"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/int_by_parts"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/integration_by_parts"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/calc_review"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/calc1_review"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/inverse_trig"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/inverse_trig_functions"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/int_by_parts"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/integration_by_parts"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/quad_int"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/quad_integrals"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/inverse_trig"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/inverse_trig_functions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/trig_int"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/trig_integrals"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/quad_int"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/quad_integrals"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/rational_vid"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/rational_functions"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/trig_int"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/trig_integrals"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/integration"
-            android:textColor="@color/colorPrimaryDark"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/rational_vid"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/rational_functions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/integration_def"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/integration_definite"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/integration"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/integration_num"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/integration_numeric"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/integration_def"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/integration_definite"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/midpoint_method"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/midpoint_method"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/integration_num"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/integration_numeric"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/trap_rule"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/trapezoid_rule"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/midpoint_method"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/midpoint_method"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/integrals_imp"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/integrals_improper"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/trap_rule"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/trapezoid_rule"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/integrals_overview"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/integrals_overview"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/integrals_imp"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/integrals_improper"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/sequences_series"
-            android:textColor="@color/colorPrimaryDark"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            <Button
+                android:id="@+id/integrals_overview"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/integrals_overview"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/sequences"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/sequences"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sequences_series"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:id="@+id/numeric_series_intro"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/numerical_intro"
-            android:textSize="18sp"
-            style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/sequences"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/sequences"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="55dp"/>
+            <Button
+                android:id="@+id/numeric_series_intro"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="@string/numerical_intro"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
     </LinearLayout>
 
 

@@ -6,21 +6,33 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="intro">"Math by Wilson"</string>
-    <string name="logo_desc">"Logo image for the Math by Wilson mobile app"</string>
+    <string name="login_failed">Login failed</string>
+    <string name="intro">Math by Wilson</string>
+    <string name="logo_desc">Logo image for the Math by Wilson mobile app</string>
     <string name="forgot_password">Forgot Password</string>
-    <string name="register">"New user? Register Here"</string>
-    <string name="username">"Email Address"</string>
-    <string name="register_2">"Register Your Account"</string>
-    <string name="password_check">"Re-enter Password"</string>
-    <string name="register_user">"Register"</string>
+    <string name="register">New user? Register Here</string>
+    <string name="username">Email Address</string>
+    <string name="register_2">Register Your Account</string>
+    <string name="password_check">Re-enter Password</string>
+    <string name="register_user">Register</string>
     <string name="prompt_fName">First Name</string>
     <string name="prompt_lName">Last Name</string>
-    <string name="student_Wilson">"Prof. Wilson's Student"</string>
+    <string name="student_Wilson">Prof. Wilson Student</string>
     <string name="student_notWilson">Other Student</string>
-    <string name="copyright">"© Copyright of Jackal Industries - 2020"</string>
+    <string name="copyright">© Copyright of Jacquelyn DeHart - 2020</string>
 
+    <!-- forgot password strings -->
+    <string name="reset_password_intro">Reset Your Password</string>
+    <string name="reset_password_first">New Password</string>
+    <string name="reset_password_verify">Re-enter New Password</string>
+    <string name="reset_btn">Reset Password</string>
+    <string name="reset_return_to_login">Return to Login</string>
+
+    <!-- send email strings -->
+    <string name="email_recipient">Recipient Email(s)</string>
+    <string name="email_subject">Subject</string>
+    <string name="email_message">Message</string>
+    <string name="email_send_btn">Send Email</string>
 
     <!-- Video Strings -->
     <string name="video_title">Example Video Title</string>
@@ -31,7 +43,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
     <string name="action_logout">Log Out</string>
-    <string name="action_email">Email Report</string>
+    <string name="action_email">Email Professor</string>
     <string name="action_exit">Exit App</string>
 
 
@@ -78,7 +90,7 @@
     <string name="derivatives">Derivatives of FUNctions</string>
     <string name="limits_fun">Limits of FUNctions</string>
     <string name="fun">FUNctions</string>
-    
+
     <!-- cal2 strings -->
     <string name="applications_antiderivatives">Applications – Antiderivatives</string>
     <string name="pos_velocity_acceleration">Position &amp; Velocity &amp; Acceleration</string>
@@ -131,7 +143,7 @@
     <string name="polar_coordinates_intro">Polar Coordinates - Intro</string>
     <string name="tangent_lines">Tangent Lines</string>
     <string name="area_arc_length">Area &amp; Arc Length</string>
-    
+
 
     <!-- selection strings -->
     <string name="pick_course">Select a Course:</string>

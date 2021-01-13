@@ -102,8 +102,8 @@ class Register : AppCompatActivity() {
     private fun rbtnAssign(rbtnId: Int): Int {
         var id: Int = 0
         when(rbtnId){
-            rbtn_wilson.id ->  id =1;
-            rbtn_not_wilson.id -> id =2;
+            rbtn_wilson.id ->  id =1
+            rbtn_not_wilson.id -> id =2
         }
         return id
 

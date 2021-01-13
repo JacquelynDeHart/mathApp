@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SendEmail"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/recipient_et"
+        tools:ignore="AutoFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_recipient"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/subject_et"
+        tools:ignore="AutoFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/email_subject"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/message_et"
+        tools:ignore="AutoFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_message"
+        android:gravity="start"
+        android:minHeight="250dp"
+        android:inputType="text|textCapSentences"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_send_btn"
+        android:layout_gravity="end"
+        android:layout_marginEnd="5dp"/>
+
+</LinearLayout>

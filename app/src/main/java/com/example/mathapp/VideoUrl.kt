@@ -42,7 +42,7 @@ class VideoUrl: AppCompatActivity() {
         loading_text = findViewById(R.id.loading_textview)
 
         //creates onclick listener for button
-        returnToCourseSelect.setVisibility(View.INVISIBLE)
+        returnToCourseSelect.visibility = View.INVISIBLE
         returnToCourseSelect.setOnClickListener {
             //return user to previous course activity based on the activity_num
             when(activity_num){
@@ -185,7 +185,7 @@ class VideoUrl: AppCompatActivity() {
             // Return the video position to the start.
             VideoView_URL.seekTo(0)
             //show return to video selection button
-            returnToCourseSelect.setVisibility(View.VISIBLE)
+            returnToCourseSelect.visibility = View.VISIBLE
         }
     }
 
