@@ -140,12 +140,14 @@ class CollegeAlgebra : AppCompatActivity() {
                 FirebaseAuth.getInstance().signOut()
                 startActivity(Intent(this, LoginActivity::class.java))
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                finish()
             }
             R.id.action_about ->{
                 Toast.makeText(this, "An application for mathbywilson.com", Toast.LENGTH_LONG).show()
             }
             R.id.action_email ->{
-                Toast.makeText(this, "send email to professor. function coming soon", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, SendEmail::class.java))
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             }
             R.id.action_exit -> {
                 finishAffinity()

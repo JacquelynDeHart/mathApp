@@ -2,6 +2,7 @@ package com.example.mathapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,15 @@ class LoginActivity : AppCompatActivity() {
             doLogin()
         }
         forgot_pass.setOnClickListener {
-            Toast.makeText(this, "Function coming soon", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Function coming soon", Toast.LENGTH_SHORT).show()
+            val emailAddress = username.text.toString().trim()
+
+            auth.sendPasswordResetEmail(emailAddress)
+                .addOnCompleteListener { task ->
+                    if(task.isSuccessful){
+                        Toast.makeText(this, "Password reset email sent to $emailAddress", Toast.LENGTH_LONG).show()
+                    }
+                }
         }
     }
 

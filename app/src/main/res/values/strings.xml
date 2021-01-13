@@ -33,6 +33,8 @@
     <string name="email_subject">Subject</string>
     <string name="email_message">Message</string>
     <string name="email_send_btn">Send Email</string>
+    <string name="email_warning">To send email, you must select an email app that exists on your device.</string>
+    <string name="email_return_to_course_select">Return to Course Selection</string>
 
     <!-- Video Strings -->
     <string name="video_title">Example Video Title</string>

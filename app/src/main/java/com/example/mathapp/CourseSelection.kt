@@ -20,15 +20,15 @@ class CourseSelection : AppCompatActivity() {
 
         course_colAlg.setOnClickListener {
             startActivity(Intent(this, CollegeAlgebra::class.java))
-
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
         course_cal1.setOnClickListener {
             startActivity(Intent(this, Calculus1::class.java))
-
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
         course_cal2.setOnClickListener {
             startActivity(Intent(this, Calculus2::class.java))
-
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -53,6 +53,7 @@ class CourseSelection : AppCompatActivity() {
                 FirebaseAuth.getInstance().signOut()
                 startActivity(Intent(this, LoginActivity::class.java))
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                finish()
             }
             R.id.action_about ->{
                 Toast.makeText(this, "An application for mathbywilson.com", Toast.LENGTH_LONG).show()

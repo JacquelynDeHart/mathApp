@@ -133,6 +133,7 @@ class Calculus1 : AppCompatActivity() {
                 FirebaseAuth.getInstance().signOut()
                 startActivity(Intent(this, LoginActivity::class.java))
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                finish()
             }
             R.id.action_about ->{
                 Toast.makeText(this, "An application for mathbywilson.com", Toast.LENGTH_LONG).show()
