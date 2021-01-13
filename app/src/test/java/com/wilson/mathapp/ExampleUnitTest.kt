@@ -1,4 +1,4 @@
-package com.example.mathapp
+package com.wilson.mathapp
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.mathapp
+package com.wilson.mathapp
 
 import android.content.Intent
 import android.os.Bundle

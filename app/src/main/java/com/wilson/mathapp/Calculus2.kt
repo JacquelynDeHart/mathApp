@@ -1,4 +1,4 @@
-package com.example.mathapp
+package com.wilson.mathapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,108 +7,139 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_calculus1.*
-import kotlinx.android.synthetic.main.activity_college_algebra.*
+import kotlinx.android.synthetic.main.activity_calculus2.*
 
-class Calculus1 : AppCompatActivity() {
+class Calculus2 : AppCompatActivity() {
     private var COURSE_SELECT = 0
-    private val ACTIVITY_NUM = 2
+    private val ACTIVITY_NUM = 3
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculus1)
+        setContentView(R.layout.activity_calculus2)
         setSupportActionBar(findViewById(R.id.tbar))
 
-        fun_lim.setOnClickListener {
+        pos_vel.setOnClickListener {
             COURSE_SELECT = 1
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        fun_graph.setOnClickListener {
+
+        area_between_curves.setOnClickListener {
             COURSE_SELECT = 2
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        fin_2.setOnClickListener {
+
+        vol_1.setOnClickListener {
             COURSE_SELECT = 3
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        fin_1.setOnClickListener {
+        vol_2.setOnClickListener {
             COURSE_SELECT = 4
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        con_func.setOnClickListener {
+        vol_shell.setOnClickListener {
             COURSE_SELECT = 5
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        infinite.setOnClickListener {
+        arc_len.setOnClickListener {
             COURSE_SELECT = 6
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        to_infin.setOnClickListener {
+        area_surface.setOnClickListener {
             COURSE_SELECT = 7
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        to_infin_in.setOnClickListener {
+        app_physics.setOnClickListener {
             COURSE_SELECT = 8
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        derv_intro.setOnClickListener {
+        log_exp.setOnClickListener {
             COURSE_SELECT = 9
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        derv_spec.setOnClickListener {
+        log_differentiation.setOnClickListener {
             COURSE_SELECT = 10
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        derv_gen_1.setOnClickListener {
+        hyperbolic_vid.setOnClickListener {
             COURSE_SELECT = 11
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        derv_gen_2.setOnClickListener {
+        calc_review.setOnClickListener {
             COURSE_SELECT = 12
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
-        derv_rev.setOnClickListener {
+        int_by_parts.setOnClickListener {
             COURSE_SELECT = 13
             val intent = Intent(this, VideoUrl::class.java)
             intent.putExtra("urlCode", COURSE_SELECT)
             intent.putExtra("activity", ACTIVITY_NUM)
             startActivity(intent)
         }
+        inverse_trig.setOnClickListener {
+            COURSE_SELECT = 14
+            val intent = Intent(this, VideoUrl::class.java)
+            intent.putExtra("urlCode", COURSE_SELECT)
+            intent.putExtra("activity", ACTIVITY_NUM)
+            startActivity(intent)
+        }
+        quad_int.setOnClickListener {
+            COURSE_SELECT = 15
+            val intent = Intent(this, VideoUrl::class.java)
+            intent.putExtra("urlCode", COURSE_SELECT)
+            intent.putExtra("activity", ACTIVITY_NUM)
+            startActivity(intent)
+        }
+        trig_int.setOnClickListener {
+            COURSE_SELECT = 16
+            val intent = Intent(this, VideoUrl::class.java)
+            intent.putExtra("urlCode", COURSE_SELECT)
+            intent.putExtra("activity", ACTIVITY_NUM)
+            startActivity(intent)
+        }
+        rational_vid.setOnClickListener {
+            COURSE_SELECT = 17
+            val intent = Intent(this, VideoUrl::class.java)
+            intent.putExtra("urlCode", COURSE_SELECT)
+            intent.putExtra("activity", ACTIVITY_NUM)
+            startActivity(intent)
+        }
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

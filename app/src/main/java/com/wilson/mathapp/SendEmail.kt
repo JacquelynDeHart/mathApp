@@ -1,4 +1,4 @@
-package com.example.mathapp
+package com.wilson.mathapp
 
 import android.content.Intent
 import android.net.Uri
@@ -9,7 +9,6 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_send_email.*
-import kotlinx.android.synthetic.main.activity_video_url.*
 import java.lang.Exception
 
 class SendEmail : AppCompatActivity() {
