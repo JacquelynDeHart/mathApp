@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wilson.mathapp"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0.1">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+
         <activity android:name="com.wilson.mathapp.SendEmail" />
 
         <uses-library

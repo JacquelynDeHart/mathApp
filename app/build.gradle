@@ -4,6 +4,14 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 
 android {
+    signingConfigs {
+        upload {
+            storeFile file('C:\\Users\\18322\\playProjects\\upload.jks')
+            storePassword 'Quantum_Upload8690'
+            keyAlias 'Q_Up8690_mathapp'
+            keyPassword 'Quandry_Upload8690'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
@@ -11,7 +19,7 @@ android {
         applicationId 'com.wilson.mathapp'
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 1
+        versionCode 2
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -22,6 +30,8 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexEnabled true
+            signingConfig signingConfigs.upload
         }
     }
     buildFeatures{
