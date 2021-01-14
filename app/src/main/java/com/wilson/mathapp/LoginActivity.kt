@@ -24,20 +24,27 @@ class LoginActivity : AppCompatActivity() {
         }
 
         sign_in.setOnClickListener {
-//            Toast.makeText(this, "Function coming soon" , Toast.LENGTH_SHORT).show()
             doLogin()
         }
         forgot_pass.setOnClickListener {
-            //Toast.makeText(this, "Function coming soon", Toast.LENGTH_SHORT).show()
-            val emailAddress = username.text.toString().trim()
-
-            auth.sendPasswordResetEmail(emailAddress)
-                .addOnCompleteListener { task ->
-                    if(task.isSuccessful){
-                        Toast.makeText(this, "Password reset email sent to $emailAddress", Toast.LENGTH_LONG).show()
-                    }
-                }
+            checkForEmail()
         }
+    }
+
+    private fun checkForEmail() {
+        if(username.text.toString().isEmpty()){
+            username.error = "Enter your email associated with your account"
+            username.requestFocus()
+            return
+        }
+        val emailAddress = username.text.toString().trim()
+
+        auth.sendPasswordResetEmail(emailAddress)
+            .addOnCompleteListener { task ->
+                if(task.isSuccessful){
+                    Toast.makeText(this, "Password reset email sent to $emailAddress", Toast.LENGTH_LONG).show()
+                }
+            }
     }
 
     public override fun onStart() {
